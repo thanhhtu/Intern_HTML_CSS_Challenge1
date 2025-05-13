@@ -66,16 +66,26 @@ $icons: (
 
   &__img {
     position: relative;
-    width: 80%;
-    height: 80%;
+    width: 85%;
     margin: 0 auto;
+    
+    margin-bottom: 8%;
 
-    &-bg {
-      fill: var(--color-amber-400);
+    img {
+      width: 100%;
+      // height: 100%;
+    }
+
+    &::after {
+      content: "";
+      // display: inline-block;
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      bottom: -8%;
+      left: 10%;
+      width: 80%;
+      height: 95%;
+      border-radius: 50px;
+      background-color: var(--color-amber-400);
       z-index: -1;
     }
   }
@@ -116,7 +126,6 @@ $icons: (
   &__bg {
     position: relative;
     width: calc(100% + 32px);
-    // height: calc(100% + 55px);
     
     &::before {
       content: '';

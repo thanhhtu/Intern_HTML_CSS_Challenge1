@@ -1,16 +1,13 @@
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
 @media screen and (max-width: 360px){
-  // .section{
-  //   padding: 3.5rem 0 1rem;
-  // }
+
 }
 
 /* For medium devices */
 @media screen and (min-width: 576px){
   .home__img {
-    width: 80%;
-    height: 80%;
+    width: 70%;
   }
 }
 
@@ -54,6 +51,38 @@
 
     &__data {
       flex-direction: row;
+    }
+
+    &__bg {
+      &--green {
+        width: 232px;
+        bottom: 33%;
+        right: 3%;
+      }
+
+      &--fuchsia {
+        width: 202px;
+        bottom: 7%;
+        left: 75%;
+      }
+
+      &--amber {
+        width: 130px;
+        bottom: 15%;
+        left: 56%;
+      }
+
+      &--blue {
+        width: 161px;
+        bottom: 55%;
+        right: 55%;
+      }
+
+      &--pink {
+        width: 271px;
+        top: 53%;
+        left: 3%;
+      }
     }
   }
 
@@ -220,13 +249,7 @@
     }
 
     &__img {
-      // width: 45%;
       width: 100%;
-      margin: 0;
-      
-      // img {
-      //   height: 250px;
-      // }
     }
 
     &__data {
@@ -236,9 +259,10 @@
     }
 
     &__bg {
-      width: 45%;
-      ::before {
-        display: none;
+      width: 55%;
+
+      &::before {
+        position: unset;
       }
     }
 
@@ -248,7 +272,7 @@
       bottom: 0;
       right: 0;
       width: 100%;
-      height: 100%;
+      height: 90%;
       background-color: var(--color-amber-100);
       z-index: var(--z-index-background);
       clip-path: polygon(100% 0, 100% 100%, 0 100%);
@@ -281,6 +305,16 @@
     &__title {
       font-size: var(--font-size-56);
       font-weight: var(--font-extra-bold);
+    }
+
+    &__img {
+      &--small {
+        display: none;
+      }
+
+      &--large {
+        display: inline-block;
+      }
     }
 
     &__bg {
@@ -368,23 +402,6 @@
     }
   }
 
-
-  .map {
-    &__container {
-      // padding: 42px 0!important;
-    }
-
-    &__data {
-      &-title {
-        font-size: var(--font-size-96);
-      }
-
-      &-subtitle {
-        font-size: var(--font-size-56);
-      }
-    }
-  }
-
   .collection {
     &__header {
       padding-bottom: 80px;
@@ -425,12 +442,39 @@
 
     &__img {
       width: 70%;
+      // overflow: hidden;
+
+      &--small {
+        display: none;
+      }
+
+      &--large {
+        display: inline-block;
+        transform: scale(1.05);
+        transform-origin: center;
+      }
     }
 
     &__bg {
       img {
         width: 100%;
         height: auto;
+      }
+    }
+  }
+
+  .map {
+    &__container {
+      // padding: 42px 0!important;
+    }
+
+    &__data {
+      &-title {
+        font-size: var(--font-size-96);
+      }
+
+      &-subtitle {
+        font-size: var(--font-size-56);
       }
     }
   }
