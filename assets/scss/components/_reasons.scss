@@ -1,0 +1,129 @@
+/*=============== REASON ===============*/
+.reason {
+  padding-top: 16px;
+  padding-bottom: 56px;
+  text-align: center;
+  overflow: hidden;
+
+  &__container {
+    border-radius: 30px;
+    padding: 32px 16px;
+    box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.10), 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__data {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: var(--font-size-32);
+    font-weight: var(--font-bold);
+    padding-bottom: 24px;
+  }
+
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 8px;
+    font-size: var(--font-size-16);
+    text-align: left;
+    padding-bottom: 8px;
+
+    &:last-child {
+      padding-bottom: 24px;
+    }
+  }
+
+  &__btn {
+    padding: 16px 32px!important;
+    display: inline-block!important;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+
+    &--light-amber {
+      width: 120%;
+      height: 50%;
+      transform: rotate(-45deg);
+      background: var(--color-amber-200);
+      filter: drop-shadow(0px 20px 25px rgba(0, 0, 0, 0.1));
+      top: 30%;
+      left: -15%;
+      z-index: -2;
+    }
+
+    &--amber {
+      width: 16%;
+      aspect-ratio: 1 / 1;
+      border-radius: 30px;
+      opacity: 0.75;
+      background: var(--color-amber-700);
+      top: 10%;
+      left: -5%;
+      z-index: -2;
+    }
+
+    &--fuchsia {
+      width: 13%;
+      aspect-ratio: 1 / 1;
+      border-radius: 30px;
+      opacity: 0.75;
+      background: var(--color-fuchsia-700);
+      bottom: -5%;
+      right: 16%;
+      z-index: -1;
+    }
+
+    &--pink {
+      width: 35%;
+      aspect-ratio: 1 / 1;
+      border-radius: 50px;
+      opacity: 0.75;
+      background: var(--color-pink-700);
+      filter: drop-shadow(0px 20px 25px rgba(0, 0, 0, 0.1));
+      bottom: -20%;
+      right: -12%;
+      z-index: -2;
+    }
+
+    &--blue {
+      width: 10%;
+      aspect-ratio: 1 / 1;
+      border-radius: 50px;
+      opacity: 0.75;
+      background: var(--color-blue-light-700);
+      top: -15%;
+      right: 10%;
+      z-index: -1;
+    }
+
+    &--green {
+      width: 15%;
+      aspect-ratio: 1 / 1;
+      border-radius: 50px;
+      opacity: 0.75;
+      background: var(--color-green-700);
+      bottom: -5%;
+      left: 10%;
+      z-index: 1;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root{
+  /*========== Height ==========*/
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  --color-amber-50: #FFFBEB;
+  --color-amber-100: #FEF3C7;
+  --color-amber-200: #FDE68A;
+  --color-amber-400: #FBBF24;
+  --color-amber-700: #B45309;
+  --color-amber-900: #78350F;
+  --color-linear-gradient-vertical-amber-50-to-white: linear-gradient(180deg, #FFFBEB 0%, #FFF 89.63%);
+
+  --color-blue-gray-200: #E2E8F0;
+  --color-blue-gray-600: #475569;
+  --color-blue-gray-700: #334155;
+  --color-blue-gray-900: #0F172A;
+
+  --color-blue-light-700: #0369A1;
+
+  --color-green-700: #15803D;
+
+  --color-pink-700: #BE185D;
+
+  --color-fuchsia-700: #A21CAF;
+
+  --color-lime-200: #D9F99D;
+  --color-lime-400: #A3E635;
+  --color-green-700: #15803D;
+
+  --color-light-gray: #E0E0E0;
+  --color-gray: #A0A0A0;
+  --color-dark-gray: #8e8e8e;
+  
+
+  /*========== Font ==========*/
+  --font-family: 'Roboto', sans-serif;
+
+  /*========== Font size ==========*/
+  --font-size-72: 72px; // large: main title |  small: none
+  --font-size-56: 56px; // large: title      |  small: main title
+  --font-size-40: 40px; // same
+  --font-size-32: 32px; // large: none       |  small: title
+  --font-size-24: 24px; // same
+  --font-size-20: 20px; // same
+  --font-size-18: 18px; // same
+  --font-size-16: 16px; // same
+
+  --font-size-96: 96px; // statistic in large devices
+  --font-size-48: 48px; // statistic in small devices
+
+  /*========== Font weight ==========*/
+  --font-extra-bold: 800;
+  --font-bold: 700;
+  --font-medium: 500;
+  --font-normal: 400;
+
+  /*========== z-index ==========*/
+  --z-index-fixed: 100;
+  --z-index-background: -10;
+
+}

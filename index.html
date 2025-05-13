@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--=============== BOXICONS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <title>HTML-CSS-Challenge 1</title>
+</head>
+<body>
+  <!--=============== HEADER ==============-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Collers</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Products</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Solutions</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Pricing</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Resources</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Log In</a>
+          </li>
+
+          <li>
+            <a href="#" class="button button--dark nav__btn">Sign up now</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <image src="assets/img/icon-menu.svg" alt="menu toggle icon" />
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!--=============== HOME ===============-->
+    <section class="home" id="home">
+      <div class="section container home__container home__container--left">
+        <div class="home__header">
+          <h1 class="home__header-title">Collectible Sneakers</h1>
+
+          <p class="home__header-description">Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices amet.</p>
+        
+          <div class="home__btn">
+            <a href="#" class="button button--dark home__btn-signup">Sign up now</a>
+            <a href="#" class="button home__btn-watch">
+              <img src="assets/img/icon-video.svg" alt="video icon">
+              <span>Watch Demo</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="home__bg">
+          <div class="home__img">
+            <img src="assets/img/img-shoe.png" alt="shoe image">
+            <img src="assets/img/bg-shoe.svg" class="home__img-bg" alt="shoe background">
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="section container home__container home__container--right">
+        <div class="home__data">
+          <div class="home__data-icon home__data-icon--cup">
+            <img src="assets/img/icon-cup.svg" alt="cup icon">
+          </div>
+
+          <h3 class="home__data-title">Nibh viverra</h3>
+
+          <p class="home__data-description">Sit bibendum donec dolor fames neque vulputate non sit aliquam. Consequat turpis natoque leo, massa.</p>
+        </div>
+
+        <div class="home__data">
+          <div class="home__data-icon home__data-icon--hamburger">
+            <img src="assets/img/icon-hamburger.svg" alt="hamburger icon">
+          </div>
+
+          <h3 class="home__data-title">Cursus amet</h3>
+
+          <p class="home__data-description">Sit bibendum donec dolor fames neque vulputate non sit aliquam. Consequat turpis natoque leo, massa. </p>
+        </div>
+
+        <div class="home__data">
+          <div class="home__data-icon home__data-icon--tv">
+            <img src="assets/img/icon-tv.svg" alt="tv icon">
+          </div>
+
+          <h3 class="home__data-title">Nibh viverra</h3>
+
+          <p class="home__data-description">Sit bibendum donec dolor fames neque vulputate non sit aliquam. Consequat turpis natoque leo, massa. </p>
+        </div>
+      </div>
+
+      <!-- <div class="home__bg--large">
+        <img src="/assets/img/bg-home.svg" alt="Triangle background">
+      </div> -->
+    </section>
+
+    <!--=============== SPECIALS ===============-->
+    <section class="special section">
+      <div class="special__container container">
+        <div class="special__header">
+          <h2 class="special__header-title">The best of the best</h2>
+          <a href="#" class="button button--light special__btn-signup">Sign up now</a>
+        </div>
+
+        <div class="special__data">
+          <div class="special__data-container">
+            <div class="special__data-img">
+              <img src="/assets/img/img-special1.png" alt="special1 image">
+            </div>
+
+            <div class="special__data-info">
+              <h3 class="special__data-title">Title</h3>
+              <p class="special__data-description">Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+            </div>
+
+            <a href="#" class="button button--light special__btn-buy">
+              <img src="/assets/img/icon-cart.svg" alt="cart icon">
+              <span>Buy now</span>
+            </a>
+          </div>
+
+          <div class="special__data-container">
+            <div class="special__data-img">
+              <img src="/assets/img/img-special2.png" alt="special2 image">
+            </div>
+            
+            <div class="special__data-info">
+              <h3 class="special__data-title">Title</h3>
+              <p class="special__data-description">Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+            </div>
+
+            <a href="#" class="button button--light special__btn-buy">
+              <img src="/assets/img/icon-cart.svg" alt="cart icon">
+              <span>Buy now</span>
+            </a>
+          </div>
+
+          <div class="special__data-container">
+            <div class="special__data-img">
+              <img src="/assets/img/img-special3.png" alt="special3 image">
+            </div>
+            
+            <div class="special__data-info">
+              <h3 class="special__data-title">Title</h3>
+              <p class="special__data-description">Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+            </div>
+
+            <a href="#" class="button button--light special__btn-buy">
+              <img src="/assets/img/icon-cart.svg" alt="cart icon">
+              <span>Buy now</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="special__bg"> -->
+        <div class="special__bg special__bg--green">a</div>
+        <div class="special__bg special__bg--fuchsia"></div>
+        <div class="special__bg special__bg--amber"></div>
+        <div class="special__bg special__bg--blue"></div>
+        <div class="special__bg special__bg--pink"></div>
+      <!-- </div> -->
+    </section>
+
+    <!--=============== REASONS ===============-->
+    <section class="reason section">
+      <div class="reason__container container">
+        <div class="reason__data">
+          <h2 class="reason__title">Why join us</h2>
+
+          <ul class="reason__description">
+            <li class="reason_description-item">
+              <img src="/assets/img/icon-tick.svg" alt="tick icon">
+              <span>Est et in pharetra magna adipiscing ornare aliquam</span>
+            </li>
+            
+            <li class="reason_description-item">
+              <img src="/assets/img/icon-tick.svg" alt="tick icon">
+              <span>Tellus arcu sed consequat ac velit ut eu blandit.</span>
+            </li>
+
+            <li class="reason_description-item">
+              <img src="/assets/img/icon-tick.svg" alt="tick icon">
+              <span>Ullamcorper ornare in et egestas dolor orci.</span>
+            </li>
+          </ul>
+
+          <a href="#" class="button button--dark reason__btn">Sign up now</a>
+        </div>
+
+        <div class="reason__img">
+          <img src="/assets/img/img-video.png" alt="video image">
+
+          <div class="reason__bg reason__bg--light-amber"></div>
+          <div class="reason__bg reason__bg--amber"></div>
+          <div class="reason__bg reason__bg--fuchsia"></div>
+          <div class="reason__bg reason__bg--pink"></div>
+          <div class="reason__bg reason__bg--blue"></div>
+          <div class="reason__bg reason__bg--green"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== TESTIMONIALS ===============-->
+    <section class="testimonial section">
+      <div class="testimonial__container container">
+        <div class="testimonial__header">
+          <h2 class="testimonial__header-title">Because they love us</h2>
+          <div class="testimonial__pagination">
+            <img src="/assets/img/icon-pagination-left.svg" alt="pagination left icon">
+            <img src="/assets/img/icon-pagination-right.svg" alt="pagination right icon">
+          </div>
+        </div>
+
+        <div class="testimonial__bg">
+          <div class="testimonial__data">
+            <div class="testimonial__data-wrapper">
+              <div class="testimonial__data-container">
+                <div class="testimonial__data-title">
+                  <img src="/assets/img/icon-testimonial1.svg" alt="testimonial1 icon">
+                  <span>Zoomerr</span>
+                </div>
+
+                <p class="testimonial__data-description">Non risus viverra enim, quis. Eget vitae arcu vivamus sit tellus, viverra turpis lorem. Varius a turpis urna id porttitor.</p>
+                
+                <div class="testimonial__data-info">
+                  <img src="/assets/img/img-user1.png" alt="user1 image">
+
+                  <div class="testimonial__data-detail">
+                    <div class="testimonial__data-name">Hellen Jummy</div>
+                    <div class="testimonial__data-position">Team Lead</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial__data-container">
+                <div class="testimonial__data-title">
+                  <img src="/assets/img/icon-testimonial2.svg" alt="testimonial2 icon">
+                  <span>SHELLS</span>
+                </div>
+
+                <p class="testimonial__data-description">Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus venenatis velit semper lectus sed ornare quam nulla.</p>
+                
+                <div class="testimonial__data-info">
+                  <img src="/assets/img/img-user2.png" alt="user2 image">
+
+                  <div class="testimonial__data-detail">
+                    <div class="testimonial__data-name">Hellena John</div>
+                    <div class="testimonial__data-position">Co-founder</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial__data-container">
+                <div class="testimonial__data-title">
+                  <img src="/assets/img/icon-testimonial3.svg" alt="testimonial3 icon">
+                  <span>ArtVenue</span>
+                </div>
+
+                <p class="testimonial__data-description">A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed.</p>
+                
+                <div class="testimonial__data-info">
+                  <img src="/assets/img/img-user3.png" alt="user3 image">
+
+                  <div class="testimonial__data-detail">
+                    <div class="testimonial__data-name">David Oshodi</div>
+                    <div class="testimonial__data-position">Manager</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== COLLECTIONS ===============-->
+    <section class="collection section">
+      <div class="collection__container container">
+        <div class="collection__header">
+          <h2 class="collection__header-title">Grow your collection</h2>
+          <p class="collection__header-description">Enim neque massa porta adipiscing elit. Sem libero id faucibus nibh amet dictum pellentesque sed. Eu non turpis risus odio sapien, fames sit rhoncus. Nec magna sed interdum sit purus tellus. Et volutpat proin neque placerat at bibendum quam tellus.</p>
+        </div>
+
+        <div class="collection__data">
+          <ul class="collection__list">
+            <li href="#" class="button collection__btn">
+              <img src="/assets/img/icon-search.svg" alt="search icon">
+              <span>Bibendum tellus</span>
+              <img src="/assets/img/icon-arrow-right-blue.svg" alt="arrow right icon">
+            </li>
+
+            <li class="button collection__list-item">
+              <img src="/assets/img/icon-rocket.svg" alt="rocket icon">
+              <span>Dolor pharetra</span>
+            </li>
+
+            <li class="button collection__list-item">
+              <img src="/assets/img/icon-screen.svg" alt="screen icon">
+              <span>Amet, fringilla</span>
+            </li>
+
+            <li class="button collection__list-item">
+              <img src="/assets/img/icon-podcast.svg" alt="podcast icon">
+              <span>Amet nibh</span>
+            </li>
+
+            <li class="button collection__list-item">
+              <img src="/assets/img/icon-setting.svg" alt="setting icon">
+              <span>Sed velit</span>
+            </li>
+          </ul>
+          
+          <div class="collection__img">
+            <img src="/assets/img/img-collection.png" alt="collection image">
+          </div>
+        </div>
+      </div>
+
+      <div class="collection__bg">
+        <img src="/assets/img/bg-wave-amber-200.svg" class="collection__bg-amber-200" alt="collection background">
+        <img src="/assets/img/bg-wave-amber-100.svg" class="collection__bg-amber-100" alt="collection background">
+        <img src="/assets/img/bg-wave-amber-900.svg" class="collection__bg-amber-900" alt="collection background">
+      </div>
+    </section>
+
+    <!--=============== MAP ===============-->
+    <section class="map section">
+      <div class="map__container container">
+        
+        <div class="map__data-info">
+          <h1 class="map__data-title">11,658,467</h1>
+          <h2 class="map__data-subtitle">Shoes Collected</h2>
+        </div>
+
+        <div class="map__img">
+          <div class="img-inner">
+            <img src="/assets/img/img-map.png" alt="map image">
+          </div>
+
+          <div class="map__img-data">
+            <img src="/assets/img/img-pair-of-shoes.png" alt="pair of shoes image">
+            
+            <div class="map__img-detail">
+              <p>Emma Simpson collected one pair of Cool Shoe</p>
+              
+              <img src="/assets/img/icon-arrow-bottom.svg" class="map__img-detail--arrow-bottom" alt="arrow bottom icon">
+              <img src="/assets/img/icon-eclipse.svg" class="map__img-detail--eclipse" alt="eclipse location icon">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== ARTICLES ===============-->
+    <section class="article section">
+      <div class="article__container container">
+        <div class="article__header">
+          <h2 class="article__header-title">Articles by Collectors</h2>
+          <a href="#" class="button article__btn article__btn-more">
+            <span>More Article</span>
+            <img src="assets/img/icon-arrow-right-amber.svg" alt="arrow right icon">
+          </a>
+        </div>
+
+        <div class="article__data">
+          <div class="article__data-container">
+            <div class="article__data-img">
+              <img src="/assets/img/img-article1.png" alt="article1 image">
+            </div>
+
+            <div class="article__data-info">
+              <h3 class="article__data-title">Congue velit risus</h3>
+              <p class="article__data-description">Nunc gravida semper tellus neque scelerisque eget tincidunt in.</p>
+            </div>
+
+            <a href="#" class="button article__btn article__btn-read">
+              <span>Read Article</span>
+              <img src="assets/img/icon-arrow-right-amber.svg" alt="arrow right icon">
+            </a>
+          </div>
+
+          <div class="article__data-container">
+            <div class="article__data-img">
+              <img src="/assets/img/img-article2.png" alt="article2 image">
+            </div>
+
+            <div class="article__data-info">
+              <h3 class="article__data-title">Ut mauris</h3>
+              <p class="article__data-description">Phasellus venenatis massa bibendum posuere dictum tristique.</p>
+            </div>
+
+            <a href="#" class="button article__btn article__btn-read">
+              <span>Read Article</span>
+              <img src="assets/img/icon-arrow-right-amber.svg" alt="arrow right icon">
+            </a>
+          </div>
+
+          <div class="article__data-container">
+            <div class="article__data-img">
+              <img src="/assets/img/img-article3.png" alt="article3 image">
+            </div>
+
+            <div class="article__data-info">
+              <h3 class="article__data-title">Aliquam tortor nunc</h3>
+              <p class="article__data-description">Leo mollis fermentum praesent in condimentum id velit purus in.</p>
+            </div>
+
+            <a href="#" class="button article__btn article__btn-read">
+              <span>Read Article</span>
+              <img src="assets/img/icon-arrow-right-amber.svg" alt="arrow right icon">
+            </a>
+          </div>
+
+          <div class="article__data-container">
+            <div class="article__data-img">
+              <img src="/assets/img/img-article4.png" alt="article4 image">
+            </div>
+
+            <div class="article__data-info">
+              <h3 class="article__data-title">Fusce non morbi</h3>
+              <p class="article__data-description">In sed bibendum metus pretium cursus tellus pharetra.</p>
+            </div>
+
+            <a href="#" class="button article__btn article__btn-read">
+              <span>Read Article</span>
+              <img src="assets/img/icon-arrow-right-amber.svg" alt="arrow right icon">
+            </a>
+          </div>
+        </div>
+
+        <div class="article__bg">
+          <img src="/assets/img/bg-rough-amber.svg" alt="article background">
+        </div>
+      </div>
+    </section>
+
+    <!--=============== EVENTS ===============-->
+    <section class="event section">
+      <div class="event__container container">
+        <div class="event__header">
+          <h2 class="event__header-title">Amazing events</h2>
+          <a href="#" class="button event__btn event__btn-explore">
+            <span>Explore Article</span>
+            <img src="assets/img/icon-arrow-right-amber.svg" alt="arrow right icon">
+          </a>
+        </div>
+
+        <div class="event__data">
+          <div class="event__data-container">
+            <div class="event__data-info">
+              <h3 class="event__data-subtitle">Ipsum</h3>
+              <p class="event__data-title">Varius est diam</p>
+            </div>
+
+            <div class="event__data-img">
+              <img src="/assets/img/img-event1.png" alt="event1 image">
+            </div>
+
+            <a href="#" class="button event__btn event__btn-buy">
+              <span>Buy ticket</span>
+              <img src="assets/img/icon-arrow-right-amber.svg" alt="arrow right icon">
+            </a>
+          </div>
+
+          <div class="event__data-container">
+            <div class="event__data-info">
+              <h3 class="event__data-subtitle">Purus</h3>
+              <p class="event__data-title">Diam felis tempus</p>
+            </div>
+
+            <div class="event__data-img">
+              <img src="/assets/img/img-event2.png" alt="event2 image">
+            </div>
+
+            <a href="#" class="button event__btn event__btn-buy">
+              <span>Buy Tickets</span>
+              <img src="assets/img/icon-arrow-right-amber.svg" alt="arrow right icon">
+            </a>
+          </div>
+          
+          <div class="event__data-container">
+            <div class="event__data-info">
+              <h3 class="event__data-subtitle">Urna</h3>
+              <p class="event__data-title">Vel nulla varius</p>
+            </div>
+
+            <div class="event__data-img">
+              <img src="/assets/img/img-event3.png" alt="event3 image">
+            </div>
+
+            <a href="#" class="button event__btn event__btn-buy">
+              <span>Buy Tickets</span>
+              <img src="assets/img/icon-arrow-right-amber.svg" alt="arrow right icon">
+            </a>
+          </div>
+
+          <div class="event__data-container">
+            <div class="event__data-info">
+              <h3 class="event__data-subtitle">Vitae</h3>
+              <p class="event__data-title">Amet tristique a</p>
+            </div>
+
+            <div class="event__data-img">
+              <img src="/assets/img/img-event4.png" alt="event4 image">
+            </div>
+
+            <a href="#" class="button event__btn event__btn-buy">
+              <span>Buy Tickets</span>
+              <img src="assets/img/icon-arrow-right-amber.svg" alt="arrow right icon">
+            </a>
+          </div>
+        </div>
+
+        <div class="article__bg">
+          <img src="/assets/img/bg-wave-blue-grey.svg" alt="event background">
+        </div>
+      </div>
+    </section>
+
+    <!--=============== SUBMISSION ===============-->
+    <section class="submission section">
+      <div class="submission__container container">
+        <h2 class="submission__title">Collect More Sneakers Today</h2>
+        <a href="#" class="button button--light submission__btn">Sign up now</a>
+      </div>
+
+      <div class="submission__bg-wrapper">
+        <div class="submission__bg-clipper">
+          <div class="submission__bg submission__bg--fuchsia"></div>
+          <div class="submission__bg submission__bg--pink"></div>
+          <div class="submission__bg submission__bg--blue"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer">
+    <div class="footer__data container section">
+      <div class="footer__content">
+        <h4 class="footer__title">Product</h4>
+        <ul class="footer__links">
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Browse</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Five</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h4 class="footer__title">Solutions</h4>
+        <ul class="footer__links">
+          <li>
+            <a href="#">Brainstorming</a>
+          </li>
+          <li>
+            <a href="#">Ideation</a>
+          </li>
+          <li>
+            <a href="#">Wireframing</a>
+          </li>
+          <li>
+            <a href="#">Research</a>
+          </li>
+          <li>
+            <a href="#">Design</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h4 class="footer__title">Support</h4>
+        <ul class="footer__links">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Integrations</a></li>
+          <li><a href="#">Reports</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h4 class="footer__title">Get the App</h4>
+        <ul class="footer__app">
+          <li>
+            <a href="#"><img src="/assets/img/img-app-store.png" alt="App Store image"></a>
+          </li>
+          <li>
+            <a href="#"><img src="/assets/img/img-google-play.png" alt="Google Play image"></a>
+          </li>
+        </ul>
+
+        <div class="footer__socials">
+          <h4 class="footer__socials-title">Follow us</h4>
+          <ul class="footer__socials-links">
+            <li>
+              <a href="#"><img src="/assets/img/icon-youtube.svg" alt="youtube icon"></a>
+            </li>
+            <li>
+              <a href="#"><img src="/assets/img/icon-facebook.svg" alt="facebook icon"></a>
+            </li>
+            <li>
+              <a href="#"><img src="/assets/img/icon-twitter.svg" alt="twitter icon"></a>
+            </li>
+            <li>
+              <a href="#"><img src="/assets/img/icon-instagram.svg" alt="instagram icon"></a>
+            </li>
+            <li>
+              <a href="#"><img src="/assets/img/icon-linkedin.svg" alt="linkedin icon"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__copyright container section">
+      <div>Collers @ 2023. All rights reserved.</div>
+      <ul class="footer__policy">
+        <li>
+          <a href="#">Term</a>
+        </li>
+        <li>
+          <a href="#">Provacy</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="/assets/img/icon-global.svg" alt="global icon">
+            <span>EN</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

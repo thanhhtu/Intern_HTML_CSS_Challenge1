@@ -1,0 +1,133 @@
+/*=============== HOME ===============*/
+$icons: (
+  'cup': '/assets/img/icon-blue-rectangle.svg',
+  'hamburger': '/assets/img/icon-green-rectangle.svg',
+  'tv': '/assets/img/icon-fuchsia-rectangle.svg'
+);
+
+.home {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+
+    &--right::after {
+      content: '';
+      background-color: var(--color-amber-100);
+      position: absolute;
+      // bottom: -16px;
+      left: -16px;
+      right: -16px;
+      top: 5px;
+      // width: 100%;
+      height: 100%;
+      z-index: var(--z-index-background);
+    }
+  }
+
+  &__header {
+    position: relative;
+    
+    &-title {
+      font-size: var(--font-size-56);
+      font-weight: var(--font-extra-bold);
+      padding-bottom: 32px;
+    }
+
+    &-description {
+      font-size: var(--font-size-18);
+      line-height: 160%;
+      padding-bottom: 32px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-signup {
+      padding: 16px 32px!important;
+      display: inline-block!important;
+    }
+
+    &-watch {
+      padding: 12px 8px!important;
+      color: var(--color-amber-900)
+    }
+
+    span {
+      padding: 0 8px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+
+    &-bg {
+      fill: var(--color-amber-400);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+  }
+
+  &__data {
+    &-icon {
+      position: relative;
+      display: inline-block;
+
+      img {
+        position: relative;
+        display: block;
+      }
+
+      @each $name, $url in $icons {
+        &--#{$name}::before {
+          content: url(#{$url});
+          position: absolute;
+          top: -5%;
+          left: 50%;
+          display: block;
+          z-index: -1;
+        }
+      }
+    }
+
+    &-title {
+      font-size: var(--font-size-20);
+      font-weight: var(--font-medium);
+      padding: 16px 0;
+    }
+
+    &-description {
+      line-height: 160%;
+    }
+  }
+
+  &__bg {
+    position: relative;
+    width: calc(100% + 32px);
+    // height: calc(100% + 55px);
+    
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -55px;
+      right: 0;
+      width: 100%;
+      height: calc(100% + 55px);
+      background-color: var(--color-amber-100);
+      z-index: var(--z-index-background);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    }
+  }
+}

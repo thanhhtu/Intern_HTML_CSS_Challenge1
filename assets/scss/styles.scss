@@ -1,0 +1,20 @@
+// Import of partial files
+@import 'config/variables';
+@import 'base/base';
+@import 'layout/layout';
+
+@import 'components/header';
+@import 'components/home';
+@import 'components/specials';
+@import 'components/reasons';
+@import 'components/testimonials';
+@import 'components/collections';
+@import 'components/map';
+@import 'components/articles';
+@import 'components/events';
+@import 'components/submissions';
+@import 'components/footer';
+
+@import 'components/button';
+@import 'components/media-queries';
+@import 'components/scroll';
