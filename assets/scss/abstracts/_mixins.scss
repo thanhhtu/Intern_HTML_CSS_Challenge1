@@ -1,0 +1,16 @@
+/*=============== TITLE ===============*/
+@mixin title--small {
+  font-size: var(--font-size-32);
+  font-weight: var(--font-bold)!important;
+}
+
+@mixin title--large {
+  font-size: var(--font-size-56);
+  font-weight: var(--font-extra-bold)!important;
+}
+
+@mixin flex($justify: space-between, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}

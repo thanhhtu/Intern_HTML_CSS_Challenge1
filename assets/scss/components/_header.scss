@@ -1,4 +1,6 @@
 /*=============== HEADER ===============*/
+@use '../abstracts/mixins' as *;
+
 .header {
   width: 100%;
   position: fixed;
@@ -11,38 +13,18 @@
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex();
   padding: 16px 0;
 
   &__logo {
-    font-size: var(--font-size-32);
-    line-height: 110%;
+    @include title--small;
   }
 
   &__logo,
   &__link,  
   &__toggle {
     color: var(--color-amber-900);
-    font-weight: var(--font-bold);
-  }
-  
-  &__menu {
-    @media screen and (max-width: 768px) {
-      position: fixed;
-      box-shadow: 0 0 4px rgba(0,0,0,.1);
-      padding: 15px 0;
-      width: 80%;
-      top: -100%;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      transition: .4s;
-      border-radius: 2rem;
-      z-index: var(--z-index-fixed);
-      background-color: var(--color-white);
-    }
+    font-weight: var(--font-normal);
   }
 
   &__list {
@@ -65,11 +47,6 @@
   &__btn {
     display: none;
   }
-}
-
-/* Show menu */
-.show-menu {
-  top: calc(var(--header-height) + .2rem);
 }
 
 /* Change background header */

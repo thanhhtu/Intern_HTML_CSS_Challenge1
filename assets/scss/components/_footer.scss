@@ -29,9 +29,7 @@
   }
 
   &__app {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center);
     flex-direction: column;
     gap: 8px;
     padding: 8px 0;
@@ -51,25 +49,19 @@
     }
 
     &-links {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(center);
       gap: 16px;
     }
   }
 
   &__copyright {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex();
     flex-direction: column;
     gap: 24px;
   }
 
   &__policy {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center);
     gap: 32px;
 
     li {

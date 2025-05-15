@@ -1,8 +1,12 @@
 /*=============== COLLECTIONS ===============*/
+@use '../abstracts/mixins' as *;
+
 .collection {
   padding-bottom: 96px;
   position: relative;
   overflow: hidden;
+
+  padding-top: 408px;
 
   &__container {
 
@@ -12,20 +16,18 @@
     padding-bottom: 32px;
 
     &-title {
-      font-size: var(--font-size-32);
-      font-weight: var(--font-bold);
+      @include title--small;
       padding-bottom: 32px;
     }
 
     &-description {
-      line-height: 28.8px;
+      line-height: 22.4px;
+      font-size: var(--font-size-16);
     }
   }
 
   &__data {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex();
     flex-direction: column;
     gap: 32px;
   }
@@ -40,6 +42,7 @@
 
     span {
       padding: 0 16px;
+      font-size: var(--font-size-20);
     }
   }
 

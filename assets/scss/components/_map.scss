@@ -1,4 +1,6 @@
 /*=============== MAP ===============*/
+@use '../abstracts/mixins' as *;
+
 .map {
   padding: 0!important;
   background-color: var(--color-amber-900);
@@ -6,7 +8,8 @@
   // position: relative;
 
   &__container {
-    margin: 0!important;
+    // margin: 0!important;
+    margin: 0 auto!important;
     padding: 0 16px;
     // padding-top: 36px!important;
     // padding-bottom: 48px!important;
@@ -32,8 +35,7 @@
     }
 
     &-subtitle {
-      font-size: var(--font-size-32);
-      font-weight: var(--font-bold);
+      @include title--small;
       color: var(--color-amber-50);
     }
   }

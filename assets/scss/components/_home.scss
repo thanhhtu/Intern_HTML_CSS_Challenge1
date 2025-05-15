@@ -7,10 +7,8 @@ $icons: (
 
 .home {
   &__container {
-    display: flex;
+    @include flex(center);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 32px;
     position: relative;
 
@@ -18,11 +16,9 @@ $icons: (
       content: '';
       background-color: var(--color-amber-100);
       position: absolute;
-      // bottom: -16px;
       left: -16px;
       right: -16px;
       top: 5px;
-      // width: 100%;
       height: 100%;
       z-index: var(--z-index-background);
     }
@@ -39,15 +35,14 @@ $icons: (
 
     &-description {
       font-size: var(--font-size-18);
-      line-height: 160%;
+      line-height: 28.8px;
       padding-bottom: 32px;
     }
   }
 
   &__btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(center);
+    gap: 16px;
 
     &-signup {
       padding: 16px 32px!important;
@@ -66,14 +61,17 @@ $icons: (
 
   &__img {
     position: relative;
-    width: 85%;
+    width: 361px;
+    height: 288.206px;
     margin: 0 auto;
     
     margin-bottom: 8%;
 
     img {
       width: 100%;
-      // height: 100%;
+      height: auto;
+      object-fit: fill;
+      z-index: 5;
     }
 
     &::after {

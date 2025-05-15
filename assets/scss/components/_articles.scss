@@ -1,4 +1,6 @@
 /*=============== ARTICLES ===============*/
+@use '../abstracts/mixins' as *;
+
 .article {
   position: relative;
   overflow: hidden;
@@ -8,15 +10,12 @@
   }
 
   &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex();
     flex-direction: column;
     gap: 8px;
 
     &-title {
-      font-size: var(--font-size-32);
-      font-weight: var(--font-bold);
+      @include title--small;
     }
   }
 
@@ -42,9 +41,7 @@
   }
 
   &__data {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex();
     flex-direction: column;
     gap: 24px;
     align-items: stretch;
@@ -53,9 +50,7 @@
       background-color: var(--color-white);
       overflow: hidden;
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flex();
       flex-direction: column;
       border-radius: 10px;
       border: 1px solid var(--color-blue-gray-200);
