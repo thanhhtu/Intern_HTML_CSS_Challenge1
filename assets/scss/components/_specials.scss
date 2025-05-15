@@ -1,26 +1,20 @@
 /*=============== SPECIALS ===============*/
+@use '../abstracts/mixins' as *;
+
 .special {
   background-color: var(--color-blue-gray-900);
   border-top: 1px solid var(--color-blue-gray-200);
   border-bottom: 1px solid var(--color-blue-gray-200);
   color: var(--color-white);
   position: relative;
-  // overflow: hidden;
-  
-
-  &__container {
-  }
 
   &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex();
     flex-direction: column;
     gap: 32px;
 
     &-title {
-      font-size: var(--font-size-32);
-      font-weight: var(--font-bold);
+      @include title--small;
     }
   }
 
@@ -38,7 +32,6 @@
       box-sizing: border-box;
       width: calc(100% - 64px);
       margin: 32px;
-      gap: 16px;
       font-size: var(--font-size-20);
       font-weight: var(--font-medium);
 
@@ -46,13 +39,15 @@
         width: 24px;
         height: 24px;
       }
+
+      span {
+        padding: 0 16px;
+      }
     }
   }
 
   &__data {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex();
     flex-direction: column;
     gap: 32px;
 
@@ -61,9 +56,7 @@
       overflow: hidden;
       z-index: 5;
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flex();
       flex-direction: column;
       border-radius: 10px;
       border: 1px solid var(--color-blue-gray-900);
@@ -90,7 +83,11 @@
     &-title {
       font-size: var(--font-size-24);
       font-weight: var(--font-bold);
-      padding-bottom: 24px;
+      padding-bottom: 16px;
+    }
+
+    &-description {
+      line-height: 28.8px;
     }
   }
 
@@ -99,7 +96,7 @@
     display: block;
 
     &--green {
-      width: 30%;
+      width: 173.01px;
       aspect-ratio: 1 / 1;
       border-radius: 50px;
       opacity: 0.75;
@@ -111,7 +108,7 @@
     }
 
     &--fuchsia {
-      width: 27%;
+      width: 150.638px;
       aspect-ratio: 1 / 1;
       border-radius: 30px;
       opacity: 0.75;
@@ -123,7 +120,7 @@
     }
 
     &--amber {
-      width: 18%;
+      width: 96.945px;
       aspect-ratio: 1 / 1;
       border-radius: 30px;
       opacity: 0.75;
@@ -135,7 +132,7 @@
     }
 
     &--blue {
-      width: 22%;
+      width: 120.063px;
       aspect-ratio: 1 / 1;
       border-radius: 50px;
       opacity: 0.75;
@@ -147,13 +144,13 @@
     }
 
     &--pink {
-        width: 35%;
+      width: 202.094px;
       aspect-ratio: 1 / 1;
       border-radius: 50px;
       opacity: 0.75;
       transform: rotate(90deg);
       background: var(--color-pink-700);
-      top: 33%;
+      top: 30%;
       left: 8%;
       z-index: 2;
     }

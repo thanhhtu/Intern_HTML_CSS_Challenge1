@@ -1,8 +1,7 @@
 /*=============== BUTTONS ===============*/
+@use '../abstracts/mixins' as *;
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(center);
   padding: 16px;
   border-radius: 8px;
   white-space: nowrap;
